@@ -5,19 +5,58 @@
     --fondo-color: #0a0b0e;
     --fondo-color-1: #000000;
     --fondo-color-2: #190d0c;
+
+    --fuente-principal: "Inter", sans-serif;
 }
-html {
-  box-sizing: border-box;
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+/* Border-Box Global */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*::before, *::after{
+    box-sizing: border-box;
+}
+/* Estilos Globales */
+body{
+    background-color: var(--fondo-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    color: var(--primary-color);
+}
+a{
+    color: var(--third-color);
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: var(--fondo-color-1);
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--fuente-principal);
 }
 h1{
-    font-size: 3.8rem;
+    font-size: 4rem;
 }
 h2{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
 }
 h3{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
