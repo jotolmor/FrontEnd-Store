@@ -100,9 +100,9 @@ h3{
 }
 /* Estilos para el Footer */
 .footer{
-    background-color: var(--fondo-color-2);
+    background-color: var(--fondo-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 2rem 0rem;
+    padding: .5rem 0rem;
     font-family: var(--fuente-principal);
 }
