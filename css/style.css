@@ -25,7 +25,7 @@ html{
 }
 /* Estilos Globales */
 body{
-    background-color: var(--fondo-color);
+    background-color: var(--fondo-color-1);
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -59,4 +59,50 @@ h2{
 }
 h3{
     font-size: 2.4rem;
+}
+/* Estilos para el Header */
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--fondo-color-2);
+}
+.header__logo{
+    margin: 4rem auto;
+
+}
+
+/* Estilos para la Navegacion */
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--fondo-color);
+    padding: 2rem;
+
+}
+.navegacion__enlace{
+    color: var(--third-color);
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navegacion__enlace:hover,
+.navegacion__enlace--activo{
+    color: var(--secondary-color);
+}
+/* Estilos para el Main */
+.contenedor__main{
+    background-color: var(--fondo-color);
+    padding: 4rem 2rem;
+    margin: 1rem auto;
+    max-width: 120rem;
+}
+/* Estilos para el Footer */
+.footer{
+    background-color: var(--fondo-color-2);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 0rem;
+    font-family: var(--fuente-principal);
 }
