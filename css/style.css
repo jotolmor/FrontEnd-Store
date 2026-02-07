@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #f46c32;
+    --secondary-color: #ffd251;
+    --third-color: #008275;
+    --fondo-color: #0a0b0e;
+    --fondo-color-1: #000000;
+    --fondo-color-2: #190d0c;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
