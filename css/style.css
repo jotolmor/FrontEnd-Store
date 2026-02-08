@@ -4,7 +4,7 @@
     --secondary-color: #ffd251;
     --third-color: #008275;
     --fondo-color: #0a0b0e;
-    --fondo-color-1: #000000;
+    --fondo-color-1: #141414;
     --fondo-color-2: #190d0c;
 
     --fuente-principal: "Inter", sans-serif;
@@ -94,6 +94,23 @@ h3{
     margin: 1rem auto;
     max-width: 120rem;
 }
+/* Estilos para la Seccion de Productos */
+.producto{
+
+}
+.producto__img{
+
+}
+.producto__informacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+
+}
+
 /* Estilos para el Footer */
 .footer{
     background-color: var(--fondo-color);
