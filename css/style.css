@@ -1,3 +1,4 @@
+/* Variables Globales */
 :root{
     --primary-color: #f46c32;
     --secondary-color: #ffd251;
@@ -7,13 +8,7 @@
     --fondo-color-2: #190d0c;
 
     --fuente-principal: "Inter", sans-serif;
-}
-
-.inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100 900;
-  font-style: normal;
+    --fuente-secundaria: "Lato", sans-serif;
 }
 /* Border-Box Global */
 html{
@@ -26,12 +21,13 @@ html{
 /* Estilos Globales */
 body{
     background-color: var(--fondo-color-1);
+    font-family: var(--fuente-principal);
     font-size: 1.6rem;
     line-height: 1.5;
 }
 p{
     font-size: 1.8rem;
-    font-family: var(--fuente-principal);
+    font-family: var(--fuente-secundaria);
     color: var(--primary-color);
 }
 a{
@@ -105,4 +101,5 @@ h3{
     text-align: center;
     padding: .5rem 0rem;
     font-family: var(--fuente-principal);
+    height: auto;
 }
