@@ -5,7 +5,7 @@
     --third-color: #008275;
     --fondo-color: #0a0b0e;
     --fondo-color-1: #141414;
-    --fondo-color-2: #190d0c;
+    --fondo-color-2: #221211;
 
     --fuente-principal: "Inter", sans-serif;
     --fuente-secundaria: "Lato", sans-serif;
@@ -89,28 +89,51 @@ h3{
 }
 /* Estilos para el Main */
 .contenedor__main{
-    background-color: var(--fondo-color);
     padding: 4rem 2rem;
     margin: 1rem auto;
     max-width: 120rem;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.sombra{
+    background-color: var(--fondo-color);
+}
 /* Estilos para la Seccion de Productos */
 .producto{
+    background-color: var(--third-color);
+    padding: 2rem;
 
 }
 .producto__img{
-
+    width: 100%;
 }
 .producto__informacion{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 .producto__nombre{
-
+    font-size: 4rem;
+    justify-content: center;
 }
 .producto__precio{
-
+    font-size: 2.4rem;
+    color: var(--secondary-color);
 }
-
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuente-secundaria);
+    line-height: 1rem;
+}
 /* Estilos para el Footer */
 .footer{
     background-color: var(--fondo-color);
