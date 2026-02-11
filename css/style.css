@@ -93,15 +93,34 @@ h3{
     margin: 1rem auto;
     max-width: 120rem;
 }
-.grid{
+.grid,
+.contenedor__main--grid{
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
+/* Estilos para la Seccion de Nosotros */
+.contenedor__main--texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.contenedor__main--imagen{
+    grid-column: 2 / 3;
+    background-image: url(/img/nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Fin Estilos para la Seccion de Nosotros */
+
 @media (min-width: 768px){
     .grid{
         grid-template-columns: repeat(3, 1fr);
     }
+   
 }
 .sombra{
     background-color: var(--fondo-color);
@@ -145,16 +164,17 @@ h3{
 /* Estilos para la Seccion de Graficos */
 .grafico{
     min-height: 30rem;
+    grid-column: 1 / 3;
+    background-size: cover;
+    background-position: center;
 }
 .grafico--camisa{
     grid-row: 2 / 3;
-    grid-column: 1 / 3;
     background-image: url(/img/grafico1.jpg);
 }
 .grafico--node{
     background-image: url(/img/grafico2.jpg);
     grid-row: 8 / 9;
-    grid-column: 1 / 3;
 }
 @media (min-width: 768px){
     .grafico--node{
