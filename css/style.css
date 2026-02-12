@@ -93,28 +93,12 @@ h3{
     margin: 1rem auto;
     max-width: 120rem;
 }
-.grid,
-.contenedor__main--grid{
+.grid{
     grid-template-columns: repeat(2, 1fr);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
-
-/* Estilos para la Seccion de Nosotros */
-.contenedor__main--texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-}
-.contenedor__main--imagen{
-    grid-column: 2 / 3;
-    background-image: url(/img/nosotros.jpg);
-    background-size: cover;
-    background-position: center;
-}
-/* Fin Estilos para la Seccion de Nosotros */
 
 @media (min-width: 768px){
     .grid{
@@ -182,13 +166,34 @@ h3{
         grid-column: 2 / 4;
     }
 }
-
-
-
-  
-
-
 /* Fin Estilos Graficos */
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+}
+}
+
+.nosotros__contenedor{
+
+}
+.nosotros__imagen{
+    grid-row: 1 / 2;
+}
+@media (min-width: 768px){
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+/* Estilos para la Seccion de Nosotros */
+
+/* Fin Estilos para la Seccion de Nosotros */
 
 /* Estilos para el Footer */
 .footer{
